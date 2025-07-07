@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var n=511;
+        dis=n.toString().split("").reverse().join("");
+        var palindrom=(n,dis)=>{
+            if(n==dis){
+                document.write("Number is Palindrom:");
+            }
+            else{
+                document.write("Number is Not Palindrom:");
+
+            }
+        }
+        palindrom(n,dis);
+    </script>
+</body>
+</html>

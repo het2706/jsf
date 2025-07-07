@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reduce</title>
+</head>
+
+<body>
+    <script>
+        var num = [10,20,10,30,30,40,50,20,10];
+        const sum = num.reduce((accum, currVal) => {
+            if (!accum.includes(currVal)) {
+                accum.push(currVal);
+            }
+            return accum;
+        }, []);
+        console.log("Sum is:",sum);
+    </script>
+</body>
+
+</html>

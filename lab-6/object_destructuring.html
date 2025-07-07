@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Destructuring</title>
+</head>
+<body>
+    <script>
+       function cal(a,b){
+       const add=a+b;
+       const sub=a-b;
+       const mul=a*b;
+       const div=a/b;
+       const mod=a%b;
+
+       return [add,sub,mul,div,mod];
+       }
+       const [add,sub,mul,div,mod]=cal(4,7)
+       document.write("Addition is:"+add+"<br>");
+       document.write("Substation is:"+sub+"<br>");
+       document.write("Multiplication is:"+mul+"<br>");
+       document.write("Division is:"+div+"<br>");
+       document.write("Modulous is:"+mod+"<br>");
+
+    </script>
+</body>
+</html>

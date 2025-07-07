@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id = "demo"></p>
+    <script>
+        class demo {
+            constructor(name, age) {
+                this.name = name;
+                this.age = age;
+            }
+        }
+        demo1 = new demo('raj', '20');
+        document.getElementById("demo").innerHTML=demo1.name+" "+demo1.age;
+    </script>
+</body>
+
+</html>

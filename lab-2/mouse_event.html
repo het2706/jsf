@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <h1  id="event">hover here</h1>
+    <p id="dis">your event is : </p>
+
+    <script>
+        document.getElementById('event').addEventListener('click',()=>{
+            document.getElementById("dis").innerHTML = "mouse click";
+        });
+
+        document.getElementById('event').addEventListener('dblclick',()=>{
+            document.getElementById("dis").innerHTML = "mouse double click";
+        });
+
+        document.getElementById('event').addEventListener('mousedown',()=>{
+            console.log("down");
+            document.getElementById("dis").innerHTML = "mouse down";
+        });
+
+        document.getElementById('event').addEventListener('mouseup',()=>{
+            console.log("up");
+            document.getElementById("dis").innerHTML = "mouse up";
+        });
+
+        document.getElementById('event').addEventListener('mouseenter',()=>{
+            document.getElementById("dis").innerHTML = "mouse enter";
+        });
+
+        document.getElementById('event').addEventListener('mouseleave',()=>{
+            document.getElementById("dis").innerHTML = "mouse leave";
+        });
+    </script>
+</body>
+</html>
